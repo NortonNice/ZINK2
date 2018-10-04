@@ -1,6 +1,6 @@
 body {
     background-color: aquamarine;
-    background-image: url(./images/backgrounds/stadium_images/stadium-night.jpg);
+    background-image: url(./images/back_img.png);
     background-size: cover;
  }
  /*
@@ -48,3 +48,8 @@ body {
     padding-top: 5px;
     
 }
+
+/*#card-1 {
+    font-size: 75px;
+    border: red;
+} */
