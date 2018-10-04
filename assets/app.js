@@ -169,7 +169,7 @@ $(document).ready(function () {
     dropDownLink.addClass("dropLink");
     dropDownLink.attr("data-name", teamList[i].name);
     dropDownLink.attr("data-abr", teamList[i].abbr);
-    $dropdownContainer.append(dropDownLink.text(teamList[i].name))
+  //  $dropdownContainer.append(dropDownLink.text(teamList[i].name))
     //<a class="dropdown-item" href="#">Action</a>  what i'm making 
     // var newTeamLink = $("<a>");
     // newTeamLink
@@ -180,6 +180,7 @@ $(document).ready(function () {
     console.log($(this).attr("data-name"));
     console.log($(this).attr("data-abr"));
 
+    
 
     //console.log(teamList[1].name);
 
