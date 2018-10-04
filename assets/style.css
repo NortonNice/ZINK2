@@ -1,0 +1,50 @@
+body {
+    background-color: aquamarine;
+    background-image: url(./images/backgrounds/stadium_images/stadium-night.jpg);
+    background-size: cover;
+ }
+ /*
+ .jumbotron {
+    background: none;
+ }
+ */
+ /*.card-deck {
+    border: 1px solid black;
+ }*/
+ 
+ #card-one {
+    height: 100%;
+ }
+ #card-two {
+     height: 100%;
+ }
+ #card-three {
+    height: 100%;
+ }
+ .card-header {
+    height: 50px;
+    text-decoration: underline;
+    background-color: rgba(250, 250, 241, 0.938);
+ }
+ .card {
+    / *height: 600px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* border: 1px solid red; */
+    background-color: rgba(250, 250, 241, 0.788);
+ }
+ .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid green; */
+    /* width: 219px; */
+    padding-bottom: 10px;
+    padding-top: 5px;
+    
+}

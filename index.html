@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link to external CSS file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Users/irvinlnelson/Desktop/project/ZINK/assets/style.css">
+    <!-- Link to external JavaScript file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/Users/irvinlnelson/Desktop/project/ZINK/assets/seatgeek.js"></script>
+    <title>ZINK</title>
+</head>
+<body>
+    
+    <!--MAIN CONTAINER FOR ALL THREE CARDS-->
+    <div class="container">
+        <div class="card-deck">
+            <div class="row">
+                <div class="col-lg-4">
+                    <!--CARD ONE - TEAM SELECTOR-->
+                    <div class="card">
+                            <h3 class="card header">SELECT A TEAM</h5>
+                        <!--IMAGE ON TOP OF CARD CARD ONE = TEAM LOGO-->
+                        <img class="card-img-top giphy-1" src="/Users/irvinlnelson/Desktop/project/ZINK/assets/images/logo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="select-team" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Select A Team
+                                </button>
+                                <div class="dropdown-menu"  aria-labelledby="dropdownMenuButton">
+                                    <!--<a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="#"></a>
+                                    <a class="dropdown-item" href="#"></a>-->
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted card-1"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!--CARD TWO - LAST GAME STATS-->
+                    <div class="card">
+                            <h3 class="card header">MOST RECENT GAME</h3>
+                        <img class="card-img-top image-center giphy-2" src="/Users/irvinlnelson/Desktop/project/ZINK/assets/images/player.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <td colspan="4">Most Recent Matchup (TEAM@TEAM)</td>
+                                        <!--<th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>-->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Date</th>
+                                        <td colspan="4">DATE GOES HERE</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Away Score</th>
+                                        <td colspan="3">SCORE GOES HERE</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Home Score</th>
+                                        <td colspan="3">SCORE GOES HERE</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h5 class="card-title">TEAM STAT CARD</h5>
+                            <div id="stats">
+                            </div>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <!--CARD THREE - NEXT GAME TICKETS-->
+                    <div class="card">
+                            <h3 class="card header">UPCOMING EVENTS</h5>
+                        <!-- IMAGE ON TOP OF CARD THREE - VENUE PULLED FROM GIPHY?-->
+                        <img class="card-img-top giphy-3" src="/Users/irvinlnelson/Desktop/project/ZINK/assets/images/stadium.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">EVENT LISTING CARD</h5>
+                            <div id="nextEvent">
+                            </div>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Next 3 Games</th>
+                                        <th scope="col">Tickets Starting At</th>
+                                        <th scope="col">Find Tickets Here</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="event-table">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer card-3">
+                            <small class="text-muted"></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
